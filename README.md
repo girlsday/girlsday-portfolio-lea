@@ -1,0 +1,1 @@
+This is a Blueprint for the Girlsday at BITRGIP
