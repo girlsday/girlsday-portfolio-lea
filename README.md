@@ -29,3 +29,10 @@ Du kannst deine √§nderungen direkt im Browser auf diesem Rechner anschauen. Daf√
 ## Beispiel anwendung
 
 - [girlsday-portfolio-blueprint](https://fotopixel.github.io/girlsday-portfolio-blueprint/)
+
+## Technologie 
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Mantine](https://mantine.dev/)
+- [Github - Pages](https://pages.github.com/)
