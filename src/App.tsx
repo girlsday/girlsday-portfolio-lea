@@ -1,32 +1,31 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import { Button, Card, Container, List, MantineProvider, Text, Title, Image, Grid, Center, Stack, Space } from "@mantine/core";
+import { Button, Container, MantineProvider, Text, Title, Image, Grid, Center, Flex, Stack, Group } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <Container bg={"grape.0"} fluid>
-        <Grid grow>
-          <Grid.Col span={4}>
+        <Flex      
+      direction={{ base: 'column', sm: 'row' }}
+      gap={{ base: 'sm', sm: 'lg' }}
+      justify={{ sm: 'center' }}>
+        <Stack>
+          <Center>
           <Carousel miw={200} loop maw={200}>
             <Carousel.Slide><Image src="/girlsday-portfolio-lea/GirlsDay-14.jpg"/></Carousel.Slide>
             <Carousel.Slide><Image src="/girlsday-portfolio-lea/GirlsDay-15.jpg"/></Carousel.Slide>
           </Carousel>
           <Title mt={20} ml={100} order={1}>Lea</Title>
-          </Grid.Col>
-          <Grid.Col span={4}>
+          </Center>
+
+        </Stack>
           <Text mt="md" c="dimmed">
             Was ist mir Wichtig? Z.B. Meine Familie und meine Freunde.
             Wer gehört zu meiner engsten Familie? Mein kleiner Bruder Jonatan, Meine Mama Julika und mein Papa Daniel. 
             Wir habe einen Kater und er heißt Krümmel. Geboren bin ich am 3. April 2010.
           </Text>
-          </Grid.Col>
-        </Grid>
+        </Flex>
           <Text mt={50} c="dimmed">
             Das mache ich gerne:
           </Text>
@@ -65,8 +64,9 @@ function App() {
         <Center mb={50}>
 
         </Center>
-        <Button variant="light" color="grape" radius="lg" size="md">
-          Um Leas seite zu Teilen hier Drücken.
+        <Button variant="light" color="grape" radius="lg" size="md" component="a" href="" target="_blank" 
+          onClick={() => {alert("Vielen Dank, dass Sie an die Lea_Sophie.Friese-Company gespendet haben! Wir möchten ihnen besonders aufgrund des hohen Betrages noch einmal explizit danken.")}}>
+          Ich bin ein Button benutze mich!
         </Button>
       </Container>
     </MantineProvider>
