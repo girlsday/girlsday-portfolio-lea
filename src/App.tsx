@@ -5,7 +5,7 @@ import { Carousel } from "@mantine/carousel";
 function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Container bg={"grape.0"} fluid>
+      <Container fluid>
         <Flex      
       direction={{ base: 'column', sm: 'row' }}
       gap={{ base: 'sm', sm: 'lg' }}
